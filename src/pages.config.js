@@ -47,42 +47,15 @@
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
-
-import Explore from './pages/Explore';
-import Favorites from './pages/Favorites';
-import Games from './pages/Games';
-import Home from './pages/Home';
-import LearningPath from './pages/LearningPath';
-import Library from './pages/Library';
-import PassiveGame from './pages/PassiveGame';
-import Player from './pages/Player';
-import Playlist from './pages/Playlist';
-import Profile from './pages/Profile';
-import Progress from './pages/Progress';
-import Settings from './pages/Settings';
-import Subscription from './pages/Subscription';
-import __Layout from './Layout.jsx';
-
+import Home from "./pages/Home";
+import Player from "./pages/Player";
 
 export const PAGES = {
-   
-    "Explore": Explore,
-    "Favorites": Favorites,
-    "Games": Games,
-    "Home": Home,
-    "LearningPath": LearningPath,
-    "Library": Library,
-    "PassiveGame": PassiveGame,
-    "Player": Player,
-    "Playlist": Playlist,
-    "Profile": Profile,
-    "Progress": Progress,
-    "Settings": Settings,
-    "Subscription": Subscription,
-}
+  Home,
+  Player,
+};
 
 export const pagesConfig = {
-    mainPage: "Home",
-    Pages: PAGES,
-    Layout: __Layout,
+  mainPage: "Home",
+  Pages: PAGES,
 };
