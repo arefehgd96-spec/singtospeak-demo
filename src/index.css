@@ -86,4 +86,6 @@
     @apply bg-background text-foreground;
   }
 }
-test
+.test {
+  color: red;
+}
