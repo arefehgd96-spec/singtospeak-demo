@@ -2,7 +2,94 @@ import { Toaster } from "@/components/ui/toaster"
 import { QueryClientProvider } from '@tanstack/react-query'
 import { queryClientInstance } from '@/lib/query-client'
 import NavigationTracker from '@/lib/NavigationTracker'
-import { pagesConfig } from './pages.config'
+/**
+ * pages.config.js - Page routing configuration
+ * 
+ * This file is AUTO-GENERATED. Do not add imports or modify PAGES manually.
+ * Pages are auto-registered when you create files in the ./pages/ folder.
+ * 
+ * THE ONLY EDITABLE VALUE: mainPage
+ * This controls which page is the landing page (shown when users visit the app).
+ * 
+ * Example file structure:
+ * 
+ *   import HomePage from './pages/HomePage';
+ *   import Dashboard from './pages/Dashboard';
+ *   import Settings from './pages/Settings';
+ *   
+ *   export const PAGES = {
+ *       "HomePage": HomePage,
+ *       "Dashboard": Dashboard,
+ *       "Settings": Settings,
+ *   }
+ *   
+ *   export const pagesConfig = {
+ *       mainPage: "HomePage",
+ *       Pages: PAGES,
+ *   };
+ * 
+ * Example with Layout (wraps all pages):
+ *
+ *   import Home from './pages/Home';
+ *   import Settings from './pages/Settings';
+ *   import __Layout from './Layout.jsx';
+ *
+ *   export const PAGES = {
+ *       "Home": Home,
+ *       "Settings": Settings,
+ *   }
+ *
+ *   export const pagesConfig = {
+ *       mainPage: "Home",
+ *       Pages: PAGES,
+ *       Layout: __Layout,
+ *   };
+ *
+ * To change the main page from HomePage to Dashboard, use find_replace:
+ *   Old: mainPage: "HomePage",
+ *   New: mainPage: "Dashboard",
+ *
+ * The mainPage value must match a key in the PAGES object exactly.
+ */
+import AIChat from './pages/AIChat';
+import Explore from './pages/Explore';
+import Favorites from './pages/Favorites';
+import Games from './pages/Games';
+import Home from './pages/Home';
+import LearningPath from './pages/LearningPath';
+import Library from './pages/Library';
+import PassiveGame from './pages/PassiveGame';
+import Player from './pages/Player';
+import Playlist from './pages/Playlist';
+import Profile from './pages/Profile';
+import Progress from './pages/Progress';
+import Settings from './pages/Settings';
+import Subscription from './pages/Subscription';
+import __Layout from './Layout.jsx';
+
+
+export const PAGES = {
+    "AIChat": AIChat,
+    "Explore": Explore,
+    "Favorites": Favorites,
+    "Games": Games,
+    "Home": Home,
+    "LearningPath": LearningPath,
+    "Library": Library,
+    "PassiveGame": PassiveGame,
+    "Player": Player,
+    "Playlist": Playlist,
+    "Profile": Profile,
+    "Progress": Progress,
+    "Settings": Settings,
+    "Subscription": Subscription,
+}
+
+export const pagesConfig = {
+    mainPage: "Home",
+    Pages: PAGES,
+    Layout: __Layout,
+};
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
