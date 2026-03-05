@@ -47,7 +47,7 @@
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
-import AIChat from './pages/AIChat';
+
 import Explore from './pages/Explore';
 import Favorites from './pages/Favorites';
 import Games from './pages/Games';
@@ -65,7 +65,7 @@ import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
-    "AIChat": AIChat,
+   
     "Explore": Explore,
     "Favorites": Favorites,
     "Games": Games,
