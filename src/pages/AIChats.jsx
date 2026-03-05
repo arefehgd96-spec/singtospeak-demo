@@ -6,3 +6,5 @@ export default function AIChat() {
     </div>
   );
 }
+export default function AIChat() {
+  return <div>AIChat placeholder</div>div>;
