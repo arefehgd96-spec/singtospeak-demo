@@ -51,7 +51,6 @@ import NavigationTracker from '@/lib/NavigationTracker'
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
-import AIChat from "./pages/AIChat.jsx";
 import Explore from './pages/Explore';
 import Favorites from './pages/Favorites';
 import Games from './pages/Games';
