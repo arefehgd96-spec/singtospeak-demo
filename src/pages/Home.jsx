@@ -1,3 +1,10 @@
+export default function Home() {
+  return (
+    <div style={{padding: 40, fontSize: 30, color: "red"}}>
+      HOME VERSION 999
+    </div>
+  );
+}
 import { useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { songs } from "../data/songs";
