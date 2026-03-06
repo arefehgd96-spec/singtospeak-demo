@@ -1,9 +1,17 @@
-export default function Home() {
-  return (
-    <div style={{ padding: 16 }}>
-      <h1>HOME OK</h1>
-      <p>If you see this, Home is loading.</p>
-      <a href="/player">Go to Player</a>
-    </div>
-  );
-}
+<a
+  href="/player"
+  style={{
+    display: "inline-block",
+    padding: "10px 14px",
+    marginTop: 8,
+    background: "#111",
+    color: "#fff",
+    borderRadius: 8,
+    textDecoration: "none",
+    position: "relative",
+    zIndex: 9999,
+    pointerEvents: "auto",
+  }}
+>
+  Go to Player
+</a>
