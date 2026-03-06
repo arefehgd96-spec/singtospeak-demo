@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
+
 export default function Home() {
   return (
-    <div style={{ padding: 20 }}>
-      <h1>HOME OK</h1>
-      <p>If you see this, Home is rendering.</p>
-      <a href="/player">Go to Player</a>
+    <div style={{ padding: 16 }}>
+      <h1>Home</h1>
+      <p>Demo Home page</p>
+
+      <Link to="/player">Go to Player</Link>
     </div>
   );
 }
