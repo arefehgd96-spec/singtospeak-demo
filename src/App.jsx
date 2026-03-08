@@ -1,7 +1,14 @@
-export default function Home() {
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import Player from "./pages/Player.jsx";
+
+export default function App() {
   return (
-    <div style={{padding: 40, fontSize: 30, color: "red"}}>
-      HOME VERSION 999
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/player" element={<Player />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
